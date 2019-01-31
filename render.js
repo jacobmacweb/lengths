@@ -2,7 +2,7 @@ $.getJSON("objects.json", function(data) {
 	console.log(data);
 	let objects = data.objects;
 
-    dpi_y = document.getElementById('testdiv').offsetHeight;
+
 
 
 
