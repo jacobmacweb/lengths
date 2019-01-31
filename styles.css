@@ -27,6 +27,7 @@ html, body {
 	height: 0;
 	border: 5px solid #aec6cf;
 	border-radius: 25px;
+	box-sizing: border-box;
 	/*padding-top: 10%;*/
 }
 

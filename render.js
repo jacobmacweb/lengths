@@ -1,6 +1,10 @@
 $.getJSON("objects.json", function(data) {
 	console.log(data);
 	let objects = data.objects;
+	dpi_x = document.getElementById('testdiv').offsetWidth;
+    dpi_y = document.getElementById('testdiv').offsetHeight;
+
+	let cm = dpi_y / 2.54;
 
   	objects.sort(function(a, b) { 
 	    return a.height - b.height;
@@ -8,7 +12,7 @@ $.getJSON("objects.json", function(data) {
 
 	for (let i = 0; i < objects.length; i++) {
 		var object = objects[i];
-		var pixelHeight = object.height * 96 / 2.54;
+		var pixelHeight = (object.height * cm) - 10; // -50 for border.
 		// var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 		var color = "hsl(" + 360 * Math.random() + ',' +
              (25 + 70 * Math.random()) + '%,' + 
