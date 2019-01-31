@@ -1,0 +1,63 @@
+* {
+	font-family: 'Sarabun', sans-serif;
+}
+
+html, body {
+	padding: 0;
+	margin: 1vh;
+}
+
+.intro {
+	padding: 1vw 2vw 0 2vw;
+}
+
+#items {
+	overflow: scroll;
+	white-space: nowrap;
+}
+
+.item {
+	min-width: 5vw;
+	display: inline-block;
+	padding: 1vw 2vw 2vw 2vw;
+}
+
+.bar {
+	width: 0;
+	height: 0;
+	border: 5px solid #aec6cf;
+	border-radius: 25px;
+	/*padding-top: 10%;*/
+}
+
+/* W3SCHOOLS */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%; 
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}

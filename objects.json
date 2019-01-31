@@ -1,0 +1,20 @@
+{
+	"objects": [
+		{
+			"title":"A centimetre",
+			"height": 1
+		},
+		{
+			"title": "An inch",
+			"height": 2.54
+		},
+		{
+			"title": "#2 pencil",
+			"height": 19
+		},
+		{
+			"title": "A4 paper",
+			"height": 29.7
+		}
+	]
+}
