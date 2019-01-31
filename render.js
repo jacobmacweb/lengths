@@ -1,4 +1,4 @@
-$.getJSON("/objects.json", function(data) {
+$.getJSON("objects.json", function(data) {
 	console.log(data);
 	let objects = data.objects;
 
